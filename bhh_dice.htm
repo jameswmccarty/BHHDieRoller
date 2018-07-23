@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<title>Dice Roller for Betrayal at House on the Hill</title>
+<body>
+<script src="dice.js"></script>
+<h1>Roll 3-sided dice</h1>
+<p>Select a quantity of 3-sided dice to roll [0,1,2].</p>
+<input type="number" id="num_dice" style="font-size:16pt;" value="1" min="1"/>
+<br/>
+<input type="button" id="roll_button" value="Roll" style="font-size:16pt;" onclick="rollDice(document.getElementById('num_dice').value);"/>
+<p id="results"></p>
+</body>
+</html>
