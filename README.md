@@ -1,6 +1,6 @@
 # Betrayal at House on the Hill Die Roller
 
-![logo](./img/logo.svg "logo")
+![logo](./img/logo.png "logo")
 
 Web page to roll 3-sided (or 6-sided) dice for a board game.
 
