@@ -5,7 +5,7 @@
 <body>
 <script src="./dice.js"></script>
 <img src="./img/logo.svg" alt="dice roller" width="175"/>
-<p>Select a quantity and type of dice to roll of:</p>
+<p>Select a quantity of dice to roll of type:</p>
 <ul>
 	<li>3-sided (<em>sides [0,1,2]</em>)</li>
 	<li>6-sided (<em>sides [1,2,3,4,5,6]</em>)</li>
@@ -17,7 +17,7 @@
          display: inline-block;
     }
 </style>
-<table>
+<table border="1">
 	<tr>
 		<td>
 			<div>
@@ -60,18 +60,17 @@
 	</tr>
 	<tr>
 		<td>
-			<p>Num: <input type="number" id="num_dice1" style="font-size:16pt;" value="1" min="1" max="1000"/></p>
+			<p style="font-size:16pt;">Qty: <input type="number" id="num_dice1" style="font-size:18pt; width:4em;" value="1" min="1" max="1000"/></p>
 		</td>
 		<td>
-			<p>Num: <input type="number" id="num_dice2" style="font-size:16pt;" value="0" min="0" max="1000"/></p>
+			<p style="font-size:16pt;">Qty: <input type="number" id="num_dice2" style="font-size:18pt; width:4em;" value="0" min="0" max="1000"/></p>
 		</td>
 	</tr>
 </table>
-<br/>
 <input type="button" 
 		id="roll_button" 
 		value="Roll" 
-		style="font-size:16pt;" 
+		style="font-size:18pt;" 
 		onclick="rollDice(document.getElementById('num_dice1').value,document.getElementById('num_dice2').value);"/>
 <p id="results"></p>
 </body>

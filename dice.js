@@ -31,7 +31,7 @@ function rollDice(num_die1, num_die2) {
 		return;
 	}
 	if(num_die1 > 1000 || num_die2 > 1000) {
-		document.getElementById("results").innerHTML = "<p>That is too many dice!</p>";
+		document.getElementById("results").innerHTML = "<p>That is too many dice! (limit 1000)</p>";
 		return;
 	}
 	// roll the first set
