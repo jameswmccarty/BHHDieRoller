@@ -5,11 +5,14 @@
 <body>
 <script src="./dice.js"></script>
 <img src="./img/logo.svg" alt="dice roller" width="175"/>
+<em>&mdash; "Never say die!</em>
 <p>Select a quantity of dice to roll of type:</p>
 <ul>
-	<li>3-sided (<em>sides [0,1,2]</em>)</li>
-	<li>6-sided (<em>sides [1,2,3,4,5,6]</em>)</li>
-	<li>8-sided (<em>sides [1,2,3,4,5,6,7,8]</em>)</li>
+	<li>2-sided  (<em>sides [(T,0), (H,1)]</em>)</li>
+	<li>3-sided  (<em>sides [0,1,2]</em>)</li>
+	<li>6-sided  (<em>sides [1,2,3,4,5,6]</em>)</li>
+	<li>8-sided  (<em>sides [1,2,3,4,5,6,7,8]</em>)</li>
+	<li>12-sided (<em>sides [1,2,3,4,5,6,7,8,9,10,11,12]</em>)</li>
 </ul>
 <p>You may roll up to two sets of dice.</p>
 <style>
@@ -25,6 +28,10 @@
 				<fieldset class="fieldset-auto-width">
 					<legend>Select type (Set 1)</legend>
 						<div>
+							<input type="radio" id="twoside1" name="dietype1" checked/>
+							<label for="twoside1">2 Sided (Coin Toss)</label>
+						</div>
+						<div>
 							<input type="radio" id="threeside1" name="dietype1" checked/>
 							<label for="threeside1">3 Sided</label>
 						</div>
@@ -36,6 +43,10 @@
 							<input type="radio" id="eightside1" name="dietype1">
 							<label for="eightside1">8 Sided</label>
 						</div>
+						<div>
+							<input type="radio" id="twelveside1" name="dietype1">
+							<label for="twelveside1">12 Sided</label>
+						</div>
 				</fieldset>
 			</div>
 		</td>
@@ -43,6 +54,10 @@
 			<div>
 				<fieldset class="fieldset-auto-width">
 					<legend>Select type (Set 2)</legend>
+						<div>
+							<input type="radio" id="twoside2" name="dietype2" checked/>
+							<label for="twoside2">2 Sided (Coin Toss)</label>
+						</div>
 						<div>
 							<input type="radio" id="threeside2" name="dietype2" checked/>
 							<label for="threeside2">3 Sided</label>
@@ -54,6 +69,10 @@
 						<div>
 							<input type="radio" id="eightside2" name="dietype2">
 							<label for="eightside2">8 Sided</label>
+						</div>
+						<div>
+							<input type="radio" id="twelveside2" name="dietype2">
+							<label for="twelveside2">12 Sided</label>
 						</div>
 				</fieldset>
 			</div>
