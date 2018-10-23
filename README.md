@@ -4,4 +4,4 @@
 
 Web page to roll 2, 3, 6, 8, or 12-sided dice for a board game.
 
-Use it live https://rawgit.com/jameswmccarty/BHHDieRoller/master/bhh_dice.htm
+Use it live https://jameswmccarty.github.io/dice/bhh_dice.htm
